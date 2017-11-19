@@ -48,8 +48,8 @@ class homeScreen: UIViewController {
 
         // Configure the trigger for a 7am wakeup.
         var dateInfo = DateComponents()
-        dateInfo.hour = 2
-        dateInfo.minute = 18
+        dateInfo.hour = 18
+        dateInfo.minute = 0
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateInfo, repeats: true)
         
         // Create the request object.
