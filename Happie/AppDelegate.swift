@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import UserNotifications
+
 var people: [NSManagedObject] = []  //core data
 
 @UIApplicationMain
@@ -33,11 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
         
-        if(people.count==0){
-            print("I AM HERE")
-            //no one in core data
-        }
-        else{
+        if(people.count != 0){
             name = people[0].value(forKeyPath: "name") as! String
         }
     }
@@ -55,12 +53,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             initialViewController = storyboard.instantiateViewController(withIdentifier: "introScreen")
         }
         else{
-            let name = people[0].value(forKeyPath: "name") as? String
+            name = people[0].value(forKeyPath: "name") as! String
         }
         
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
         
+        self.registerForPushNotifications()
+
         return true
     }
 
@@ -87,8 +87,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
-
     
+    func registerForPushNotifications() {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+            // Enable or disable features based on authorization.
+        }
+    }
     
     
     
