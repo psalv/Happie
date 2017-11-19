@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		301114011FC13BAB00EEBE63 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 301114041FC13BAB00EEBE63 /* IndieFlower.ttf */; };
 		301114021FC13BAB00EEBE63 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 301114041FC13BAB00EEBE63 /* IndieFlower.ttf */; };
+		9FEB801A1FC14426001572E3 /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB80191FC14426001572E3 /* mainScreen.swift */; };
 		9FF3098F1FC0EA7C00233A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */; };
 		9FF309911FC0EA7C00233A38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF309901FC0EA7C00233A38 /* ViewController.swift */; };
 		9FF309941FC0EA7C00233A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF309921FC0EA7C00233A38 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		301114031FC13BAB00EEBE63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/IndieFlower.ttf; sourceTree = "<group>"; };
+		9FEB80191FC14426001572E3 /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
 		9FF3098B1FC0EA7C00233A38 /* Happie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FF309901FC0EA7C00233A38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				9FF3099A1FC0EA7C00233A38 /* LaunchScreen.storyboard */,
 				9FF3099D1FC0EA7C00233A38 /* Info.plist */,
 				9FF309951FC0EA7C00233A38 /* Happie.xcdatamodeld */,
+				9FEB80191FC14426001572E3 /* mainScreen.swift */,
 			);
 			path = Happie;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				9FF309B21FC10BE400233A38 /* homeScreen.swift in Sources */,
 				9FF309911FC0EA7C00233A38 /* ViewController.swift in Sources */,
+				9FEB801A1FC14426001572E3 /* mainScreen.swift in Sources */,
 				9FF309971FC0EA7C00233A38 /* Happie.xcdatamodeld in Sources */,
 				9FF3098F1FC0EA7C00233A38 /* AppDelegate.swift in Sources */,
 			);
