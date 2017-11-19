@@ -9,9 +9,10 @@
 import Foundation
 import UIKit
 
-
+// data['data']['children'][0]['data']['title']
 class quoteScreen: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
+    let quoteLink: String = "https://www.reddit.com/r/quotes/top/.json?limit=1&jsonp"
     
     override func viewDidLoad() {
         super.viewDidLoad()

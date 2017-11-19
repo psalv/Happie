@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happieLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="hip-vU-86i">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happieLogoWhite.png" translatesAutoresizingMaskIntoConstraints="NO" id="hip-vU-86i">
                                 <rect key="frame" x="16" y="48" width="343" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -33,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="happieLogo.png" width="2048" height="2048"/>
+        <image name="happieLogoWhite.png" width="2048" height="2048"/>
     </resources>
 </document>
