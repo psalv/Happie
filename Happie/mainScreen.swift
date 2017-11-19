@@ -13,7 +13,8 @@ class mainScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.init(red: 33/255, green: 150/255, blue: 243/255, alpha:1) //blue 500
+        self.view.backgroundColor=UIColor.black
+        //self.view.backgroundColor = UIColor.init(red: 33/255, green: 150/255, blue: 243/255, alpha:1) //blue 500
         startUp()
     }
     
@@ -36,6 +37,15 @@ class mainScreen: UIViewController {
     
     
     func startUp(){
+        
+        walk.backgroundColor = UIColor.init(red: 255/255, green: 110/255, blue: 64/255, alpha:1) //green 800
+        journal.backgroundColor = UIColor.init(red: 255/255, green: 64/215, blue: 129/255, alpha:1) //teal 700
+        medidate.backgroundColor = UIColor.init(red: 224/255, green: 64/255, blue: 251/255, alpha:1) //cyan 600
+        gratitude.backgroundColor = UIColor.init(red: 105/255, green: 240/255, blue: 174/255, alpha:1) //light blue 500
+        random.backgroundColor = UIColor.init(red: 0/255, green: 229/255, blue: 255/255, alpha:1) //indigo 300
+
+        
+        
         labels.append(random)
         labels.append(gratitude)
         labels.append(medidate)
@@ -44,18 +54,19 @@ class mainScreen: UIViewController {
         
 //        headerText.backgroundColor=UIColor.init(red: 26/255, green: 35/255, blue: 126/255, alpha:1) //indigo 900
 //        footerText.backgroundColor=UIColor.init(red: 26/255, green: 35/255, blue: 126/255, alpha:1) //indigo 900
-        headerText.backgroundColor=UIColor.black
-        footerText.backgroundColor=UIColor.black
-        headerText.textColor=UIColor.white
-        headerText.font=headerText.font.withSize(20.0)
+
         
         
         for label in labels{
             label.font = label.font.withSize(35.0)
-            label.backgroundColor=UIColor.white
 //            label.textColor=UIColor.init(red: 13/255, green: 71/255, blue: 161/255, alpha:1) //blue 900
-            label.textColor=UIColor.black
+            label.textColor=UIColor.white
         }
+        
+        
+        
+        
+        
         
 
     }
