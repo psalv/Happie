@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="IndieFlower.ttf">
+            <string>IndieFlower</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -195,7 +200,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brisk Nature Walk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="142-kY-XPJ">
-                                <rect key="frame" x="0.0" y="95" width="414" height="107"/>
+                                <rect key="frame" x="0.0" y="55" width="414" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="xOy-Md-drB"/>
                                 </constraints>
@@ -204,7 +209,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heA-Sn-z5X">
-                                <rect key="frame" x="0.0" y="210" width="414" height="107"/>
+                                <rect key="frame" x="0.0" y="165" width="414" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="ktw-hs-wLC"/>
                                 </constraints>
@@ -213,7 +218,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Gratitudes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCT-cL-CRg">
-                                <rect key="frame" x="0.0" y="440" width="414" height="107"/>
+                                <rect key="frame" x="0.0" y="385" width="414" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="Iyo-7Y-HDF"/>
                                 </constraints>
@@ -221,26 +226,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-fD-98i">
-                                <rect key="frame" x="0.0" y="325" width="414" height="107"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAo-Jr-88w">
+                                <rect key="frame" x="0.0" y="42" width="414" height="10"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="107" id="gyL-dJ-fKf"/>
+                                    <constraint firstAttribute="height" constant="10" id="3Ie-7P-OnR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="IndieFlower" family="Indie Flower" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What have you done today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAo-Jr-88w">
-                                <rect key="frame" x="0.0" y="32" width="414" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97b-7n-yWX">
+                                <rect key="frame" x="0.0" y="605" width="414" height="10"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="3Ie-7P-OnR"/>
+                                    <constraint firstAttribute="height" constant="10" id="Gv5-8r-UNH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Act of Kindness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYJ-H4-5hq">
-                                <rect key="frame" x="0.0" y="555" width="414" height="107"/>
+                                <rect key="frame" x="0.0" y="495" width="414" height="107"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-fD-98i">
+                                <rect key="frame" x="0.0" y="275" width="414" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="gyL-dJ-fKf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -249,28 +263,32 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hAo-Jr-88w" firstAttribute="trailing" secondItem="142-kY-XPJ" secondAttribute="trailing" id="99W-B4-rrk"/>
-                            <constraint firstItem="tCT-cL-CRg" firstAttribute="top" secondItem="pdz-fD-98i" secondAttribute="bottom" constant="8" symbolic="YES" id="Crc-0c-UDE"/>
+                            <constraint firstItem="tCT-cL-CRg" firstAttribute="top" secondItem="pdz-fD-98i" secondAttribute="bottom" constant="3" id="Crc-0c-UDE"/>
                             <constraint firstItem="pdz-fD-98i" firstAttribute="leading" secondItem="tCT-cL-CRg" secondAttribute="leading" id="Dbo-dm-IHk"/>
                             <constraint firstItem="heA-Sn-z5X" firstAttribute="leading" secondItem="pdz-fD-98i" secondAttribute="leading" id="EKm-uY-3SL"/>
-                            <constraint firstItem="hAo-Jr-88w" firstAttribute="top" secondItem="1OU-UO-Pcz" secondAttribute="topMargin" constant="12" id="He0-SL-7Tp"/>
+                            <constraint firstItem="hAo-Jr-88w" firstAttribute="top" secondItem="1OU-UO-Pcz" secondAttribute="topMargin" constant="22" id="He0-SL-7Tp"/>
                             <constraint firstItem="tCT-cL-CRg" firstAttribute="trailing" secondItem="HYJ-H4-5hq" secondAttribute="trailing" id="PWZ-2I-LeZ"/>
-                            <constraint firstItem="142-kY-XPJ" firstAttribute="top" secondItem="hAo-Jr-88w" secondAttribute="bottom" constant="8" symbolic="YES" id="Pzp-d5-gJx"/>
+                            <constraint firstItem="142-kY-XPJ" firstAttribute="top" secondItem="hAo-Jr-88w" secondAttribute="bottom" constant="3" id="Pzp-d5-gJx"/>
                             <constraint firstItem="heA-Sn-z5X" firstAttribute="trailing" secondItem="pdz-fD-98i" secondAttribute="trailing" id="QP6-7T-HdY"/>
-                            <constraint firstItem="GNh-0N-EET" firstAttribute="bottom" secondItem="HYJ-H4-5hq" secondAttribute="bottom" constant="74" id="V5a-fb-U7X"/>
+                            <constraint firstItem="97b-7n-yWX" firstAttribute="leading" secondItem="HYJ-H4-5hq" secondAttribute="leading" id="SMz-NB-eHt"/>
+                            <constraint firstItem="97b-7n-yWX" firstAttribute="trailing" secondItem="HYJ-H4-5hq" secondAttribute="trailing" id="U29-FZ-eCp"/>
+                            <constraint firstItem="GNh-0N-EET" firstAttribute="bottom" secondItem="HYJ-H4-5hq" secondAttribute="bottom" constant="134" id="V5a-fb-U7X"/>
                             <constraint firstItem="tCT-cL-CRg" firstAttribute="leading" secondItem="HYJ-H4-5hq" secondAttribute="leading" id="YWW-BX-36B"/>
-                            <constraint firstItem="heA-Sn-z5X" firstAttribute="top" secondItem="142-kY-XPJ" secondAttribute="bottom" constant="8" symbolic="YES" id="YdM-xo-MkM"/>
+                            <constraint firstItem="heA-Sn-z5X" firstAttribute="top" secondItem="142-kY-XPJ" secondAttribute="bottom" constant="3" id="YdM-xo-MkM"/>
                             <constraint firstAttribute="trailing" secondItem="hAo-Jr-88w" secondAttribute="trailing" id="bHQ-6m-Rll"/>
-                            <constraint firstItem="HYJ-H4-5hq" firstAttribute="top" secondItem="tCT-cL-CRg" secondAttribute="bottom" constant="8" symbolic="YES" id="eP2-0n-WtW"/>
+                            <constraint firstItem="HYJ-H4-5hq" firstAttribute="top" secondItem="tCT-cL-CRg" secondAttribute="bottom" constant="3" id="eP2-0n-WtW"/>
                             <constraint firstItem="142-kY-XPJ" firstAttribute="trailing" secondItem="heA-Sn-z5X" secondAttribute="trailing" id="hZA-AS-oIT"/>
                             <constraint firstItem="hAo-Jr-88w" firstAttribute="leading" secondItem="142-kY-XPJ" secondAttribute="leading" id="kdU-bl-b3v"/>
                             <constraint firstItem="pdz-fD-98i" firstAttribute="trailing" secondItem="tCT-cL-CRg" secondAttribute="trailing" id="nRp-MI-9g3"/>
-                            <constraint firstItem="pdz-fD-98i" firstAttribute="top" secondItem="heA-Sn-z5X" secondAttribute="bottom" constant="8" symbolic="YES" id="qxe-ax-cqI"/>
+                            <constraint firstItem="97b-7n-yWX" firstAttribute="top" secondItem="HYJ-H4-5hq" secondAttribute="bottom" constant="3" id="ow4-xN-gNt"/>
+                            <constraint firstItem="pdz-fD-98i" firstAttribute="top" secondItem="heA-Sn-z5X" secondAttribute="bottom" constant="3" id="qxe-ax-cqI"/>
                             <constraint firstItem="hAo-Jr-88w" firstAttribute="leading" secondItem="1OU-UO-Pcz" secondAttribute="leading" id="s9t-sH-kGF"/>
                             <constraint firstItem="142-kY-XPJ" firstAttribute="leading" secondItem="heA-Sn-z5X" secondAttribute="leading" id="uxu-ac-DcF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GNh-0N-EET"/>
                     </view>
                     <connections>
+                        <outlet property="footerText" destination="97b-7n-yWX" id="VNh-Gk-z6S"/>
                         <outlet property="gratitude" destination="tCT-cL-CRg" id="FOW-Zc-YfA"/>
                         <outlet property="headerText" destination="hAo-Jr-88w" id="Wu8-8r-no8"/>
                         <outlet property="journal" destination="heA-Sn-z5X" id="I0O-C8-Nqo"/>
