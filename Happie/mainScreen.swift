@@ -40,20 +40,43 @@ class mainScreen: UIViewController {
     @IBOutlet weak var walk: UILabel!
     @IBOutlet weak var journal: UILabel!
     
+    func openPopUp(){
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpViewController") as! popUpViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
+    
     @IBAction func walkClick(_ sender: UIButton) {
+        walk.backgroundColor = UIColor.init(red: 255/255, green: 110/255, blue: 64/255, alpha:0.6) //green 800
+        currentActivity=0;
+        openPopUp()
         
     }
     
     @IBAction func journalClick(_ sender: UIButton) {
+        journal.backgroundColor = UIColor.init(red: 255/255, green: 64/215, blue: 129/255, alpha:0.6) //teal 700
+        currentActivity=1;
+        openPopUp()
     }
     
     @IBAction func meditateClick(_ sender: UIButton) {
+        medidate.backgroundColor = UIColor.init(red: 224/255, green: 64/255, blue: 251/255, alpha:0.6) //cyan 600
+        currentActivity=2;
+        openPopUp()
     }
     
     @IBAction func gratitudeClick(_ sender: UIButton) {
+        gratitude.backgroundColor = UIColor.init(red: 105/255, green: 240/255, blue: 174/255, alpha:0.6) //light blue 500
+        currentActivity=3;
+        openPopUp()
     }
     
     @IBAction func randomClick(_ sender: UIButton) {
+        random.backgroundColor = UIColor.init(red: 0/255, green: 229/255, blue: 255/255, alpha:0.6) //indigo 300
+        currentActivity=4;
+        openPopUp()
     }
     
     

@@ -14,6 +14,7 @@
 		3027CD091FC159B700557147 /* cog.png in Resources */ = {isa = PBXBuildFile; fileRef = 3027CD071FC159B700557147 /* cog.png */; };
 		3027CD0B1FC1698400557147 /* quoteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027CD0A1FC1698400557147 /* quoteScreen.swift */; };
 		3027CD0D1FC16CAE00557147 /* happieLogoWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3027CD0C1FC16CAE00557147 /* happieLogoWhite.png */; };
+		9F823F421FC174C800125AE2 /* popUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F823F411FC174C800125AE2 /* popUpViewController.swift */; };
 		9FEB801A1FC14426001572E3 /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB80191FC14426001572E3 /* mainScreen.swift */; };
 		9FF3098F1FC0EA7C00233A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */; };
 		9FF309911FC0EA7C00233A38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF309901FC0EA7C00233A38 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 		3027CD071FC159B700557147 /* cog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cog.png; sourceTree = "<group>"; };
 		3027CD0A1FC1698400557147 /* quoteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quoteScreen.swift; sourceTree = "<group>"; };
 		3027CD0C1FC16CAE00557147 /* happieLogoWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happieLogoWhite.png; sourceTree = "<group>"; };
+		9F823F411FC174C800125AE2 /* popUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpViewController.swift; sourceTree = "<group>"; };
 		9FEB80191FC14426001572E3 /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
 		9FF3098B1FC0EA7C00233A38 /* Happie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,9 @@
 		9FF3098D1FC0EA7C00233A38 /* Happie */ = {
 			isa = PBXGroup;
 			children = (
+				9F823F411FC174C800125AE2 /* popUpViewController.swift */,
+				9FEB80191FC14426001572E3 /* mainScreen.swift */,
+				9FF309921FC0EA7C00233A38 /* Main.storyboard */,
 				301114041FC13BAB00EEBE63 /* IndieFlower.ttf */,
 				3027CD0C1FC16CAE00557147 /* happieLogoWhite.png */,
 				3027CD071FC159B700557147 /* cog.png */,
@@ -104,12 +109,10 @@
 				3027CD041FC14F7800557147 /* happieLogo.png */,
 				9FF309901FC0EA7C00233A38 /* ViewController.swift */,
 				9FF309B11FC10BE400233A38 /* homeScreen.swift */,
-				9FF309921FC0EA7C00233A38 /* Main.storyboard */,
 				9FF309981FC0EA7C00233A38 /* Assets.xcassets */,
 				9FF3099A1FC0EA7C00233A38 /* LaunchScreen.storyboard */,
 				9FF3099D1FC0EA7C00233A38 /* Info.plist */,
 				9FF309951FC0EA7C00233A38 /* Happie.xcdatamodeld */,
-				9FEB80191FC14426001572E3 /* mainScreen.swift */,
 				3027CD0A1FC1698400557147 /* quoteScreen.swift */,
 			);
 			path = Happie;
@@ -235,6 +238,7 @@
 			files = (
 				3027CD0B1FC1698400557147 /* quoteScreen.swift in Sources */,
 				9FF309B21FC10BE400233A38 /* homeScreen.swift in Sources */,
+				9F823F421FC174C800125AE2 /* popUpViewController.swift in Sources */,
 				9FF309911FC0EA7C00233A38 /* ViewController.swift in Sources */,
 				9FEB801A1FC14426001572E3 /* mainScreen.swift in Sources */,
 				9FF309971FC0EA7C00233A38 /* Happie.xcdatamodeld in Sources */,

@@ -11,6 +11,7 @@ import CoreData
 import UserNotifications
 
 var people: [NSManagedObject] = []  //core data
+var currentActivity = 0;
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
