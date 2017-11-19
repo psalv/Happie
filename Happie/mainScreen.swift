@@ -40,7 +40,21 @@ class mainScreen: UIViewController {
     @IBOutlet weak var walk: UILabel!
     @IBOutlet weak var journal: UILabel!
     
+    @IBAction func walkClick(_ sender: UIButton) {
+        
+    }
     
+    @IBAction func journalClick(_ sender: UIButton) {
+    }
+    
+    @IBAction func meditateClick(_ sender: UIButton) {
+    }
+    
+    @IBAction func gratitudeClick(_ sender: UIButton) {
+    }
+    
+    @IBAction func randomClick(_ sender: UIButton) {
+    }
     
     
     func startUp(){

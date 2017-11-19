@@ -16,6 +16,13 @@ class homeScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "background.png")
+        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 1)
+        
+        
         welcomeLabel.text = "Welcome, " + name + "."
         self.scheduleNotification()
     }
