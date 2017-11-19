@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(true){
+//            nextScreen(an: false);
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -34,8 +38,24 @@ class ViewController: UIViewController {
         }
         else{
             //call next screen
+            //nextScreen(an: true)
+            performSegue(withIdentifier: "homeScreen", sender: self)
+
         }
 
     }
+    
+//    func nextScreen(an: Bool, sender: UI){
+//        print("\n\n\n\n\\n\n\n\n\n\n HELLO")
+//
+//        shouldPerformSegue(withIdentifier: "homeScreen", sender: self?)
+//
+//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//
+//        let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("homeScreen") as! homeScreen
+//        self.presentViewController(nextViewController, animated:true, completion:nil)
+//    }
+    
+    
 }
 

@@ -14,6 +14,7 @@
 		9FF309991FC0EA7C00233A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF309981FC0EA7C00233A38 /* Assets.xcassets */; };
 		9FF3099C1FC0EA7C00233A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF3099A1FC0EA7C00233A38 /* LaunchScreen.storyboard */; };
 		9FF309A71FC0EA7C00233A38 /* HappieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF309A61FC0EA7C00233A38 /* HappieTests.swift */; };
+		9FF309B21FC10BE400233A38 /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF309B11FC10BE400233A38 /* homeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		9FF309A21FC0EA7C00233A38 /* HappieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF309A61FC0EA7C00233A38 /* HappieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappieTests.swift; sourceTree = "<group>"; };
 		9FF309A81FC0EA7C00233A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FF309B11FC10BE400233A38 /* homeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */,
 				9FF309901FC0EA7C00233A38 /* ViewController.swift */,
+				9FF309B11FC10BE400233A38 /* homeScreen.swift */,
 				9FF309921FC0EA7C00233A38 /* Main.storyboard */,
 				9FF309981FC0EA7C00233A38 /* Assets.xcassets */,
 				9FF3099A1FC0EA7C00233A38 /* LaunchScreen.storyboard */,
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF309B21FC10BE400233A38 /* homeScreen.swift in Sources */,
 				9FF309911FC0EA7C00233A38 /* ViewController.swift in Sources */,
 				9FF309971FC0EA7C00233A38 /* Happie.xcdatamodeld in Sources */,
 				9FF3098F1FC0EA7C00233A38 /* AppDelegate.swift in Sources */,
