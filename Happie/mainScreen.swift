@@ -11,6 +11,13 @@ import UIKit
 
 class mainScreen: UIViewController {
     
+    @IBAction func navigationToQuote(_ sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController =
+            storyBoard.instantiateViewController(withIdentifier: "quoteScreen")
+        self.present(nextViewController, animated: true, completion:nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor=UIColor.black
