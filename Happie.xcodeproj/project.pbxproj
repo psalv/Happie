@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301113FF1FC1345F00EEBE63 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 301113FE1FC1345E00EEBE63 /* IndieFlower.ttf */; };
+		301114001FC1345F00EEBE63 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 301113FE1FC1345E00EEBE63 /* IndieFlower.ttf */; };
 		9FF3098F1FC0EA7C00233A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */; };
 		9FF309911FC0EA7C00233A38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF309901FC0EA7C00233A38 /* ViewController.swift */; };
 		9FF309941FC0EA7C00233A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF309921FC0EA7C00233A38 /* Main.storyboard */; };
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		301113FE1FC1345E00EEBE63 /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
 		9FF3098B1FC0EA7C00233A38 /* Happie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FF309901FC0EA7C00233A38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		9FF3098D1FC0EA7C00233A38 /* Happie */ = {
 			isa = PBXGroup;
 			children = (
+				301113FE1FC1345E00EEBE63 /* IndieFlower.ttf */,
 				9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */,
 				9FF309901FC0EA7C00233A38 /* ViewController.swift */,
 				9FF309B11FC10BE400233A38 /* homeScreen.swift */,
@@ -188,6 +192,7 @@
 				9FF3099C1FC0EA7C00233A38 /* LaunchScreen.storyboard in Resources */,
 				9FF309991FC0EA7C00233A38 /* Assets.xcassets in Resources */,
 				9FF309941FC0EA7C00233A38 /* Main.storyboard in Resources */,
+				301113FF1FC1345F00EEBE63 /* IndieFlower.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301114001FC1345F00EEBE63 /* IndieFlower.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

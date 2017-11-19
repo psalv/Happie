@@ -8,41 +8,10 @@
 
 import UIKit
 import CoreData
-var name = ""
+var name: String = ""
 
 class ViewController: UIViewController {
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        //1
-//        guard let appDelegate =
-//            UIApplication.shared.delegate as? AppDelegate else {
-//                return
-//        }
-//        let managedContext =
-//            appDelegate.persistentContainer.viewContext
-//        //2
-//        let fetchRequest =
-//            NSFetchRequest<NSManagedObject>(entityName: "Person")
-//        //3
-//        do {
-//            people = try managedContext.fetch(fetchRequest)
-//        } catch let error as NSError {
-//            print("Could not fetch. \(error), \(error.userInfo)")
-//        }
-//        
-//        if(people.count==0){
-//            print("I AM HERE")
-//            //no one in core data
-//        }
-//        else{
-//            print("HEREEE")
-//            name = people[3].value(forKeyPath: "name") as! String
-//            print(name)
-//            print("^^^")
-//        }
-//    }
-    
+   
     func save(name: String) {
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {

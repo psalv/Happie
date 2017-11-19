@@ -11,9 +11,12 @@ import UIKit
 
 class homeScreen: UIViewController {
     
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print(name)
+        welcomeLabel.text = "Welcome, " + name + "."
     }
     
     override func didReceiveMemoryWarning() {
@@ -21,9 +24,10 @@ class homeScreen: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var random: UILabel!
-    
-    @IBAction func button(_ sender: Any) {
-        random.text="hello"
+    @IBAction func nextScreen(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController =
+            storyBoard.instantiateViewController(withIdentifier: "mainScreen")
+        self.present(nextViewController, animated: true, completion:nil)
     }
 }
