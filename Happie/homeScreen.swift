@@ -15,7 +15,7 @@ class homeScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(name)
+
         welcomeLabel.text = "Welcome, " + name + "."
     }
     
