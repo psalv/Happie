@@ -12,6 +12,7 @@ import UserNotifications
 
 var people: [NSManagedObject] = []  //core data
 var currentActivity = 0;
+var quote: String = ""
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -44,7 +45,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        fetchName()
+        self.fetchName()
+        self.setQuote()
+
         // Override point for customization after application launch.
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -64,6 +67,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
+    
+    func setQuote(){
+        let urlString: String = "https://www.reddit.com/r/quotes/top/.json?limit=1&jsonp"
+        
+        guard let url = URL(string: urlString) else { return }
+        
+        quote = "'Life is so great that we only get a tiny moment to enjoy everything we see. And that moment is right now. And that moment is counting down. And that moment is always, always fleeting. You will never be as young as you are right now.' - Neil Pasricha"
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+            
+            guard let data = data else { return }
+            
+            do {
+                if var JSONObject = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: AnyObject] {
+                    JSONObject = JSONObject["data"] as! [String: AnyObject]
+                    
+                    if let w = JSONObject["children"] as? [[String:Any]], !w.isEmpty {
+                        JSONObject = w[0]["data"] as! [String: AnyObject]
+                    }
+                    
+                    quote = JSONObject["title"] as! String
+                }
+                
+            } catch {
+                print("error1: \(error)")
+            }
+            
+            }.resume()
+    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -77,6 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        self.setQuote()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
