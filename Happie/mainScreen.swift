@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import CoreData
 
+var hit = 0
+
 class mainScreen: UIViewController {
     
     @IBOutlet weak var happieStreak: UILabel!
@@ -22,89 +24,52 @@ class mainScreen: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        
         let calendar = NSCalendar.current
         var current = Date()
         var anchor = Date(timeIntervalSinceReferenceDate: 0)
-//        let date1 = calendar.startOfDay(for: current)
-//        let date2 = calendar.startOfDay(for: anchor)
+        current = calendar.startOfDay(for: current)
+        anchor = calendar.startOfDay(for: anchor)
 
-        let components = calendar.dateComponents([.minute], from: anchor, to: current)
-        let curDay = components.minute as! Int
-        
+        let components = calendar.dateComponents([.day], from: anchor, to: current)
+        let curDay = components.day as! Int
         
         self.fetchStreak()
         
-        print(streak)
-        print(streakDay)
-        print(curDay)
-
-        if(curDay > streakDay){
-            if(curDay > streakDay + 1 && streakDay != 0){
-                streak = 0
+        if(curDay > streakDay && hit == 1){
+            hit = 0
+            
+            if(curDay > streakDay + 1){
+                streak = 1
             } else {
                 streak += 1
             }
             
-            if(streakDay == 0){
-                streak = 0
-            }
             streakDay = curDay
-            happieStreak.text = "Happie Streak: " + String(streak)
-            
-            print(streak)
-            print(streakDay)
-            self.saveStreak()
         }
+
+        self.happieStreak.text = "Happie Streak: " + String(streak)
+        self.saveStreak()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor=UIColor.black
-        //self.view.backgroundColor = UIColor.init(red: 33/255, green: 150/255, blue: 243/255, alpha:1) //blue 500
         startUp()
-        
-        
-        
-//        let calendar = NSCalendar.current
-//        var current = Date()
-//        var anchor = Date(timeIntervalSinceReferenceDate: 0)
-//        let date1 = calendar.startOfDay(for: current)
-//        let date2 = calendar.startOfDay(for: anchor)
-//
-//        let components = calendar.dateComponents([.day], from: date2, to: date1)
-//        let curDay = components.day as! Int
-//
-//
-//        self.fetchStreak()
-//
-//        if(curDay > streakDay){
-//            streak += 1
-//            if(streakDay == 0){
-//                streak = 0
-//            }
-//            streakDay = curDay
-//            happieStreak.text = "Happie Streak: " + String(streak)
-//            self.saveStreak()
-//        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     private var labels=[UILabel]()
-
     @IBOutlet weak var headerText: UILabel!
     @IBOutlet weak var footerText: UILabel!
-    
     @IBOutlet weak var random: UILabel!
     @IBOutlet weak var gratitude: UILabel!
     @IBOutlet weak var medidate: UILabel!
     @IBOutlet weak var walk: UILabel!
     @IBOutlet weak var journal: UILabel!
-    
-    
     
     func saveStreak() {
         guard let appDelegate =
@@ -130,6 +95,9 @@ class mainScreen: UIViewController {
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
+        
+        happieStreak.text = "Happie Streak: " + String(streak)
+
     }
     
     
@@ -160,6 +128,7 @@ class mainScreen: UIViewController {
     
     
     func openPopUp(){
+        hit = 1;
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpViewController") as! popUpViewController
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
@@ -216,23 +185,10 @@ class mainScreen: UIViewController {
         labels.append(walk)
         labels.append(journal)
         
-//        headerText.backgroundColor=UIColor.init(red: 26/255, green: 35/255, blue: 126/255, alpha:1) //indigo 900
-//        footerText.backgroundColor=UIColor.init(red: 26/255, green: 35/255, blue: 126/255, alpha:1) //indigo 900
 
-        
-        
         for label in labels{
             label.font = label.font.withSize(35.0)
-//            label.textColor=UIColor.init(red: 13/255, green: 71/255, blue: 161/255, alpha:1) //blue 900
             label.textColor=UIColor.white
         }
-        
-        
-        
-        
-        
-        
-
     }
-    
 }

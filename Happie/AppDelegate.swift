@@ -103,14 +103,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.setQuote()
 
         
+        
+        
         let calendar = NSCalendar.current
         var current = Date()
         var anchor = Date(timeIntervalSinceReferenceDate: 0)
-        let date1 = calendar.startOfDay(for: current)
-        let date2 = calendar.startOfDay(for: anchor)
+        current = calendar.startOfDay(for: current)
+        anchor = calendar.startOfDay(for: anchor)
         
-        let components = calendar.dateComponents([.minute], from: date2, to: date1)
-        let curDay = components.minute as! Int
+        let components = calendar.dateComponents([.day], from: anchor, to: current)
+        let curDay = components.day as! Int
         
         self.fetchStreak()
         
@@ -119,6 +121,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             streakDay = 0
             self.saveStreak()
         }
+        
         
         
         
