@@ -10,6 +10,8 @@
 		301114011FC13BAB00EEBE63 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 301114041FC13BAB00EEBE63 /* IndieFlower.ttf */; };
 		301114021FC13BAB00EEBE63 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 301114041FC13BAB00EEBE63 /* IndieFlower.ttf */; };
 		3027CD051FC14F7800557147 /* happieLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3027CD041FC14F7800557147 /* happieLogo.png */; };
+		3027CD081FC159B700557147 /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 3027CD061FC159B700557147 /* globe.png */; };
+		3027CD091FC159B700557147 /* cog.png in Resources */ = {isa = PBXBuildFile; fileRef = 3027CD071FC159B700557147 /* cog.png */; };
 		9FEB801A1FC14426001572E3 /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB80191FC14426001572E3 /* mainScreen.swift */; };
 		9FF3098F1FC0EA7C00233A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */; };
 		9FF309911FC0EA7C00233A38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF309901FC0EA7C00233A38 /* ViewController.swift */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		301114031FC13BAB00EEBE63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/IndieFlower.ttf; sourceTree = "<group>"; };
 		3027CD041FC14F7800557147 /* happieLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happieLogo.png; sourceTree = "<group>"; };
+		3027CD061FC159B700557147 /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		3027CD071FC159B700557147 /* cog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cog.png; sourceTree = "<group>"; };
 		9FEB80191FC14426001572E3 /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
 		9FF3098B1FC0EA7C00233A38 /* Happie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				301114041FC13BAB00EEBE63 /* IndieFlower.ttf */,
+				3027CD071FC159B700557147 /* cog.png */,
+				3027CD061FC159B700557147 /* globe.png */,
 				9FF3098E1FC0EA7C00233A38 /* AppDelegate.swift */,
 				3027CD041FC14F7800557147 /* happieLogo.png */,
 				9FF309901FC0EA7C00233A38 /* ViewController.swift */,
@@ -198,6 +204,8 @@
 				9FF3099C1FC0EA7C00233A38 /* LaunchScreen.storyboard in Resources */,
 				9FF309991FC0EA7C00233A38 /* Assets.xcassets in Resources */,
 				9FF309941FC0EA7C00233A38 /* Main.storyboard in Resources */,
+				3027CD081FC159B700557147 /* globe.png in Resources */,
+				3027CD091FC159B700557147 /* cog.png in Resources */,
 				3027CD051FC14F7800557147 /* happieLogo.png in Resources */,
 				301114011FC13BAB00EEBE63 /* IndieFlower.ttf in Resources */,
 			);
