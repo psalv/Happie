@@ -19,7 +19,23 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBOutlet weak var nameText: UITextField!
+    
+    @IBOutlet weak var welcome: UILabel!
 
+    //MARK: Actions
+    
+    @IBAction func nameButton(_ sender: UIButton) {
+        let name = nameText.text
+        if(name == ""){
+            welcome.text="Please enter a name."
+            welcome.textColor=UIColor.red
+        }
+        else{
+            //call next screen
+        }
 
+    }
 }
 
