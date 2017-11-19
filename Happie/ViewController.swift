@@ -14,9 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         if(true){
-//            nextScreen(an: false);
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController =
+                storyBoard.instantiateViewController(withIdentifier: "homeScreen")
+            self.present(nextViewController, animated: false, completion:nil)
         }
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,25 +39,12 @@ class ViewController: UIViewController {
             welcome.textColor=UIColor.red
         }
         else{
-            //call next screen
-            //nextScreen(an: true)
-            performSegue(withIdentifier: "homeScreen", sender: self)
-
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController =
+                storyBoard.instantiateViewController(withIdentifier: "homeScreen")
+            self.present(nextViewController, animated: true, completion:nil)
         }
 
     }
-    
-//    func nextScreen(an: Bool, sender: UI){
-//        print("\n\n\n\n\\n\n\n\n\n\n HELLO")
-//
-//        shouldPerformSegue(withIdentifier: "homeScreen", sender: self?)
-//
-//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-//
-//        let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("homeScreen") as! homeScreen
-//        self.presentViewController(nextViewController, animated:true, completion:nil)
-//    }
-    
-    
 }
 
