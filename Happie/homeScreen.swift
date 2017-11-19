@@ -11,6 +11,15 @@ import UIKit
 import UserNotifications
 
 class homeScreen: UIViewController {
+    @IBOutlet var barOne: UILabel!
+    @IBOutlet var barTwo: UILabel!
+    
+    @IBOutlet var barThree: UILabel!
+    
+    @IBOutlet var barFour: UILabel!
+    @IBOutlet var barFive: UILabel!
+
+    
     
     @IBOutlet weak var welcomeLabel: UILabel!
     
@@ -22,8 +31,14 @@ class homeScreen: UIViewController {
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 1)
         
+        barOne.backgroundColor = UIColor.init(red: 255/255, green: 110/255, blue: 64/255, alpha:0.4) //green 800
+        barTwo.backgroundColor = UIColor.init(red: 255/255, green: 64/215, blue: 129/255, alpha:0.5) //teal 700
+        barThree.backgroundColor = UIColor.init(red: 224/255, green: 64/255, blue: 251/255, alpha:0.5) //cyan 600
+        barFour.backgroundColor = UIColor.init(red: 105/255, green: 240/255, blue: 174/255, alpha:0.8) //light blue 500
+        barFive.backgroundColor = UIColor.init(red: 0/255, green: 229/255, blue: 255/255, alpha:0.9) //indigo 300
         
         welcomeLabel.text = "Welcome, " + name + "."
+        welcomeLabel.font = welcomeLabel.font.withSize(40.0)
         self.scheduleNotification()
     }
     
