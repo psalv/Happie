@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,13 +14,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Happie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="introScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Happie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDb-jb-FhE">
-                                <rect key="frame" x="90" y="536" width="233" height="30"/>
+                                <rect key="frame" x="90" y="467" width="194" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="RkG-VU-CFj"/>
                                 </constraints>
@@ -30,13 +30,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happinesss is something we maintain. It happens every single day, and you have the ability to control it's direction." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecl-1X-Jll">
-                                <rect key="frame" x="20" y="268" width="374" height="133"/>
+                                <rect key="frame" x="16" y="268" width="343" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Let's start by getting your name." textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="DW6-Jk-OCw">
-                                <rect key="frame" x="20" y="456" width="374" height="30"/>
+                                <rect key="frame" x="16" y="387" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="p7j-nQ-Xaz"/>
                                 </constraints>
@@ -45,7 +45,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi! It's wonderful to have you here. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBA-D3-9pu">
-                                <rect key="frame" x="20" y="190" width="374" height="21"/>
+                                <rect key="frame" x="16" y="190" width="343" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="MjZ-br-dKR"/>
                                 </constraints>
@@ -54,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xh-WR-PI3">
-                                <rect key="frame" x="19" y="635" width="374" height="36"/>
+                                <rect key="frame" x="19" y="566" width="335" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="qbH-pF-aRv"/>
                                 </constraints>
@@ -98,7 +98,7 @@
             <objects>
                 <viewController storyboardIdentifier="homeScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jWI-Os-Voh" customClass="homeScreen" customModule="Happie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HI6-dI-MG6" customClass="home">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40W-xE-h8S">
@@ -133,7 +133,7 @@
             <objects>
                 <viewController id="IHB-wO-xJO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1OU-UO-Pcz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="GNh-0N-EET"/>

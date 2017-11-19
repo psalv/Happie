@@ -12,13 +12,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if(true){
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let nextViewController =
-                storyBoard.instantiateViewController(withIdentifier: "homeScreen")
-            self.present(nextViewController, animated: false, completion:nil)
-        }
     }
 
     override func didReceiveMemoryWarning() {
