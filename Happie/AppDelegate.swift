@@ -13,12 +13,66 @@ import UserNotifications
 var people: [NSManagedObject] = []  //core data
 var currentActivity = 0;
 var quote: String = ""
+var streak: Int = 0
+var streakDay: Int = 0
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    func saveStreak() {
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        // 1
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        // 2
+        let entity =
+            NSEntityDescription.entity(forEntityName: "Person",
+                                       in: managedContext)!
+        let person = NSManagedObject(entity: entity,
+                                     insertInto: managedContext)
+        // 3
+        people[0].setValue(streak, forKeyPath: "streak")
+        people[0].setValue(streakDay, forKeyPath: "streakDay")
 
+        // 4
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    
+    
+    
+    func fetchStreak() {
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        //2
+        let fetchRequest =
+            NSFetchRequest<NSManagedObject>(entityName: "Person")
+        //3
+        do {
+            people = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        
+        if(people.count != 0){
+            streak = people[0].value(forKeyPath: "streak") as! Int
+            streakDay = people[0].value(forKeyPath: "streakDay") as! Int
+        }
+    }
+    
     
     func fetchName(){
         guard let appDelegate =
@@ -48,6 +102,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.fetchName()
         self.setQuote()
 
+        
+        let calendar = NSCalendar.current
+        var current = Date()
+        var anchor = Date(timeIntervalSinceReferenceDate: 0)
+        let date1 = calendar.startOfDay(for: current)
+        let date2 = calendar.startOfDay(for: anchor)
+        
+        let components = calendar.dateComponents([.minute], from: date2, to: date1)
+        let curDay = components.minute as! Int
+        
+        self.fetchStreak()
+        
+        if(curDay > streakDay + 1){
+            streak = 0
+            streakDay = 0
+            self.saveStreak()
+        }
+        
+        
+        
         // Override point for customization after application launch.
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         

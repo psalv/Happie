@@ -346,6 +346,7 @@
                     </view>
                     <connections>
                         <outlet property="gratitude" destination="tCT-cL-CRg" id="FOW-Zc-YfA"/>
+                        <outlet property="happieStreak" destination="uTk-wx-8TG" id="RKz-Wk-bjR"/>
                         <outlet property="journal" destination="heA-Sn-z5X" id="I0O-C8-Nqo"/>
                         <outlet property="medidate" destination="pdz-fD-98i" id="XTf-J3-41w"/>
                         <outlet property="random" destination="HYJ-H4-5hq" id="EGU-ud-T8y"/>
